@@ -66,9 +66,9 @@ node {
 
           stage('Delete Scratch Org') {
               if (isUnix()) {
-                   rc = sh returnStatus: true, script: "${toolbelt}/sfdx force:org:delete -u Jenkins -p"
+                   rc = sh returnStatus: true, script: "${toolbelt}/ force:org:delete -u Jenkins -p"
               }else{
-                  rc = bat returnStatus: true, script: "\"${toolbelt}\" sfdx force:org:delete -u Jenkins -p"
+                  rc = bat returnStatus: true, script: "\"${toolbelt}\" force:org:delete -u Jenkins -p"
               }
             if (rc != 0) {
                 error 'Scratch Org Deletion failed'
