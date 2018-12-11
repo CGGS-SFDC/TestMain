@@ -6,6 +6,6 @@
     }
   ],
   "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sfdcLoginUrl": "https://capgemini-gs.my.salesforce.com",
   "sourceApiVersion": "44.0"
 }
